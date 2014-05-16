@@ -1,0 +1,382 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:addthis="http://www.addthis.com/help/api-spec" >
+<head profile="http://gmpg.org/xfn/11">
+	
+<title>Boom Twins alpha report | aBit Games</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+				
+	<script type="text/javascript">//<![CDATA[
+	// Google Analytics for WordPress by Yoast v4.2.3 | http://yoast.com/wordpress/google-analytics/
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount','UA-20266698-1']);
+	_gaq.push(['_setCustomVar',2,'author','nantas',3],['_setCustomVar',3,'tags','alpha postmortem screenshot',3],['_setCustomVar',4,'year','2011',3],['_setCustomVar',5,'categories','blog',3],['_trackPageview']);
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+	//]]></script>
+
+
+<!-- Stylesheets -->
+<link rel="stylesheet" type="text/css" href="http://abitgames.com/old-blog/ex/wp-content/themes/headway-2014/style.css" id="style" />
+<link rel="stylesheet" type="text/css" href="http://abitgames.com/old-blog/ex/wp-content/themes/headway-2014/media/cache/headway.css?1399235379" /><!-- Headway Elements -->
+<link rel="stylesheet" type="text/css" href="http://abitgames.com/old-blog/ex/wp-content/themes/headway-2014/media/cache/leafs.css?1399235379" /><!-- Headway Leaf Sizing -->
+<link rel="stylesheet" type="text/css" href="http://abitgames.com/old-blog/ex/wp-content/themes/headway-2014/custom.css?1373649742" /><!-- Headway Custom CSS -->
+
+<link rel='stylesheet' id='NextGEN-css'  href='http://abitgames.com/old-blog/ex/wp-content/plugins/nextgen-gallery/css/ngg_k2.css?ver=1.0.0' type='text/css' media='screen' />
+<link rel='stylesheet' id='shutter-css'  href='http://abitgames.com/old-blog/ex/wp-content/plugins/nextgen-gallery/shutter/shutter-reloaded.css?ver=1.3.4' type='text/css' media='screen' />
+
+<!--[if lte IE 7]>
+	<link rel="stylesheet" type="text/css" href="http://abitgames.com/old-blog/ex/wp-content/themes/headway-2014/media/css/ie/ie.css" />
+<![endif]-->
+
+<!--[if IE 6]>
+	<link rel="stylesheet" type="text/css" href="http://abitgames.com/old-blog/ex/wp-content/themes/headway-2014/media/css/ie/ie6.css" />
+	
+	<script type="text/javascript" src="http://abitgames.com/old-blog/ex/wp-content/themes/headway-2014/media/js/ie6.js"></script>
+<![endif]-->
+
+<!--[if IE 7]>
+	<link rel="stylesheet" type="text/css" href="http://abitgames.com/old-blog/ex/wp-content/themes/headway-2014/media/css/ie/ie7.css" />
+<![endif]-->
+
+
+<!-- Scripts -->
+<script type='text/javascript' src='http://abitgames.com/old-blog/ex/wp-content/plugins/swfobj/swfobject.js?ver=2.2'></script>
+<script type='text/javascript' src='http://abitgames.com/old-blog/ex/wp-includes/js/comment-reply.min.js?ver=3.5.2'></script>
+<script type='text/javascript' src='http://abitgames.com/old-blog/ex/wp-includes/js/jquery/jquery.js?ver=1.8.3'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var shutterSettings = {"msgLoading":"L O A D I N G","msgClose":"Click to Close","imageCount":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://abitgames.com/old-blog/ex/wp-content/plugins/nextgen-gallery/shutter/shutter-reloaded.js?ver=1.3.3'></script>
+<script type='text/javascript' src='http://abitgames.com/old-blog/ex/wp-content/plugins/nextgen-gallery/js/jquery.cycle.all.min.js?ver=2.9995'></script>
+<script type='text/javascript' src='http://abitgames.com/old-blog/ex/wp-content/plugins/nextgen-gallery/js/ngg.slideshow.min.js?ver=1.06'></script>
+
+
+
+<!-- Extras -->
+
+
+
+
+ 
+
+<link rel='next' title='New Project Is (Almost) Ready For a Test!' href='http://abitgames.com/old-blog/2011/blog/new-project-is-almostready-for-a-test/' />
+
+<link rel='shortlink' href='http://abitgames.com/old-blog/?p=251' />
+
+<!-- All in One SEO Pack 1.6.14.6 by Michael Torbert of Semper Fi Web Design[320,388] -->
+<meta name="description" content="Boom Twins alpha report, feedback, postmortem and plan" />
+<meta name="keywords" content="boomtwins, ios, ipad, alpha, feedback,alpha,postmortem,screenshot" />
+<link rel="canonical" href="http://abitgames.com/old-blog/2011/blog/boom-twins-alpha-report/" />
+<!-- /all in one seo pack -->
+<!-- <meta name="NextGEN" version="1.9.5" /> -->
+<link rel="stylesheet" type="text/css" href="http://abitgames.com/old-blog/ex/wp-content/plugins/social-media-widget/social_widget.css" />
+
+
+</head><!-- End <head>
+<base href="http://abitgames.com/old-blog" />
+ -->
+
+
+<body class="custom header-fixed footer-fixed single s-category-blog s-author-nantas">
+
+
+
+<div id="whitewrap" class="clearfix">
+<div id="wrapper">
+
+<div id="header" class="header-image header-rearrange-item-1">
+<div id="top" class="header-link-image header-link-top clearfix"><a href="http://abitgames.com/old-blog" title="aBit Games" rel="home nofollow" class="header-link-image-inside"><img src="http://abitgames.com/old-blog/ex/wp-content/uploads/headway/header-uploads/blogheader.png" alt="aBit Games" />
+</a></div>
+</div><!-- #header -->
+
+<div id="navigation" class="clearfix header-rearrange-item-2 navigation-left">
+<ul id="menu-navigation" class="navigation breadcrumb-active navigation-left"><li class="page-item-1"><a href="http://abitgames.com/old-blog"  rel="nofollow" >Home</a></li><li id="menu-item-855" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-855"><a href="http://moneywitches.com" onclick="javascript:_gaq.push(['_trackEvent','outbound-menu','http://moneywitches.com']);">Money Witches</a></li>
+<li id="menu-item-105" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-105"><a href="http://abitgames.com/old-blog/category/blog/" >Blog</a></li>
+<li id="menu-item-33" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33"><a href="http://abitgames.com/old-blog/about-abit-games/" >About</a></li>
+<li id="menu-item-101" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-101"><a href="http://abitgames.com/old-blog/contact-us/" >Contact Us</a></li>
+<li id="menu-item-785" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-785"><a href="http://www.ex-dev.com" onclick="javascript:_gaq.push(['_trackEvent','outbound-menu','http://www.ex-dev.com']);">exDev</a></li>
+</ul>
+<form id="header-search-bar" method="get" action="http://abitgames.com/old-blog">
+		<input id="header-search-input" name="s" type="text" value="Type here to search..." onblur="if(this.value == '') {this.value = 'Type here to search...';}" onclick="if(this.value == 'Type here to search...') {this.value = '';}" accesskey="S" />
+</form>
+
+</div><!-- #navigation -->
+
+<div id="breadcrumbs" class="header-rearrange-item-3"><p>You Are Here: &nbsp; <a href="http://abitgames.com/old-blog">Home</a> &raquo; <a href="http://abitgames.com/old-blog/category/blog/" title="View all posts in Blog" rel="category tag">Blog</a> &raquo; <span id="current-breadcrumb">Boom Twins Alpha Report: What We&#8217;ve Learnt</span>
+</p></div><!-- #breadcrumbs -->
+
+<div id="container" class="container">
+
+<div class="content box-no-title fluid-height headway-leaf" id="leaf-1">
+<div class="headway-leaf-inside">
+<div class="leaf-content">
+
+<div id="post-251" class="hentry post author-nantas category-blog">
+<h1 class="entry-title">Boom Twins Alpha Report: What We&#8217;ve Learnt</h1>
+
+<div class="meta-below-title entry-meta clearfix clearfix-title">
+<div class="left">
+Written on <span class="entry-date published">March 12, 2011</span> by <a rel="author" class="author-link fn nickname url" href="http://abitgames.com/old-blog/author/nantas/" title="View all posts by nantas">nantas</a> in <a href="http://abitgames.com/old-blog/category/blog/" title="View all posts in Blog" rel="category tag">Blog</a>
+</div><!-- .left -->
+</div><!-- .entry-meta -->
+<div class="entry-content">
+<p>As I wrote in the previous post, we finished our alpha test for Boom Twins last Friday. I will first post up some tips and tricks for iOS app test build online distribution. Then there&#8217;re sections listed the major feedback and what we&#8217;ve learnt from the making of the alpha version.</p>
+<p><img class="alignnone size-full wp-image-263" title="Boom Twins Alpha Screenshot" src="http://abitgames.com/old-blog/ex/wp-content/uploads/2011/03/bt_screenshot_alpha.jpg" alt="" width="500" height="350" /></p>
+<p>[heading h="2"]Distribution[/heading]</p>
+<p>First of all, figuring out all the work flow making and distributing a game build for iOS, as well as releasing a test version online (thanks to <a href="http://testflightapp.com/" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://testflightapp.com']);" target="_blank">Testflight</a>) is a valuable experience. We started the project without any knowledge on developing app for iOS. Usually nobody will even think about figure out stuff like that when the project is far from finish. We learnt a lot from this alpha version. Although there are still a lot of issues when you start dealing with app store, at least we are half way through all the tech difficulties. Here are some very useful information that helped us during the alpha release:</p>
+<p><a title="How to create an IPA" href="http://support.testflightapp.com/kb/tutorials/how-to-create-an-ipa" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://support.testflightapp.com']);" target="_blank">How to create an IPA from TestFlight</a></p>
+<p>This is actually a pretty comprehensive guide about how to build your game for online distribution. There&#8217;s only one point missing in the above guide (an important one for beginners like us): the distribution profile you used for build and archive, and then used for &#8220;Save to disk&#8230;&#8221; must contain all the device ids you want to distribute the build on. That should be common sense for most developers but easily confused for newbies.</p>
+<p><a title="Unable to copy dSYM file" href="http://stackoverflow.com/questions/4466095/unable-to-copy-dsym-file-into-archive" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://stackoverflow.com']);" target="_blank">Unable to copy dSYM file into archive</a></p>
+<p>Then we ran into this error message when trying to &#8220;Build and Archive&#8221;. It&#8217;s kinda funny how I try to look for a guide in apple&#8217;s developer center first, then search for &#8220;build and archive&#8221; in google, then &#8220;Xcode build error blah blah&#8221;&#8230; Finally I throw &#8220;Unable to copy dSYM file into archive&#8221; to google and he immediately points me to the almighty <a href="http://stackoverflow.com/questions/4466095/unable-to-copy-dsym-file-into-archive" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://stackoverflow.com']);" target="_blank">stackOverflow</a>. Problem solved. Whenever there&#8217;s an error message or exception is thrown by some library or middleware, it&#8217;s best to just google the exact word of the message.</p>
+<p><a href="http://iphonedevelopertips.com/xcode/testing-application-names-on-home-screen.html" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://iphonedevelopertips.com']);" target="_blank">Testing Application Name on Home Screen</a></p>
+<p>This is another unknown &#8220;common knowledge&#8221; for newbie developers. iOS home screen can only display a maximum of 11 characters of an app&#8217;s name. If you are off the limit, your app name will be fucked into 2 pieces and stuffed with &#8220;&#8230;&#8221; in between. That&#8217;s why our game is called &#8220;Boom Twins&#8221; now but the title image still says &#8220;Boom Boom Twins&#8221; haha. If I would&#8217;ve known it I will not make that title image at all, or the name and title image style of the game will change completely.</p>
+<p>Anyway we found out only after we set up all the product name properly in Unity and Xcode. If you don&#8217;t want to have a identity crisis the day before you submit your app, it&#8217;s better to test the name out way before. The link above is a very simple but practical method. Yeah I know you can just write the name on paper and count the characters but still it&#8217;s better to look and feel it on iOS home screen first IMO.</p>
+<p><img class="alignnone size-full wp-image-259" title="streetview01" src="http://abitgames.com/old-blog/ex/wp-content/uploads/2011/03/streetview01.jpg" alt="" width="400" height="249" /></p>
+<p>[heading h="2"]Feedback About the Game[/heading]</p>
+<p>We invited and recruited 12 testers for Boom Twins alpha. Most of them are old colleagues who&#8217;re still working in the industry (for mainstream AAA titles), also we have some friends and families joined as well. It has been a good combination of different feedback sources that we need to take into consideration. Usually industry veterans have higher standard about the quality of the game, while normal users will provide more useful information about the accessibility to gameplay mechanics.</p>
+<p>First I will write down each of the major problems we gathered from the feedback, followed by our opinion about the issue.</p>
+<ul>
+<li>Control scheme (especially for single player) has got the most of  negative feedback. A lot of testers think the controls (virtual sticks and buttons) are not responsive enough. Also when it comes to active reload in the single player mode, most of the testers has trouble to get back to shooting stick after reload.</li>
+</ul>
+<p>We agree with them, especially the reload button is completely off position at the moment. It is ok to let player&#8217;s right hand in charge of a couple of buttons (not recommended for action game either!), but controlling a shooting stick plus other buttons is definitely not the way to go. To solve this issue, we plan to take the idea from<a href="http://itunes.apple.com/us/app/infinity-field/id391766089?mt=8" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://itunes.apple.com']);" target="_blank"> Infinity Field</a>, that release your finger from the screen also counts as a user move. So we can let user touch the shooting stick to fire, and release the stick to reload.</p>
+<ul>
+<li>For single player mode, testers are confused by the dual characters set up. Tester assumes that he need to control one of the characters but not both. One of them suggested player should be able to choose which character to play on the fly for single player mode, and let AI control the other. (take <a href="http://toucharcade.com/2010/10/29/gun-bros/" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://toucharcade.com']);" target="_blank">GunsBro</a> as an example)</li>
+</ul>
+<p>It&#8217;s tough to see the basic setup confuses player but we still need to deal with it. The concept of Boom Twins is actually made for multiplayer. Back then I was so fascinated by the two player coop play of Bejeweled 2 on iPad. (It was never official, just the game can be played by multiple people and really fun to be played that way.) I made a very wrong assumption that iPad game should focus on multiplayer mode because no other device or platform provides the same convenient way. Although there are titles like &#8220;Shoot shoot shot&#8221; purely about multiplayer, the market is still ruled by single player mode. iPad users usually will not bring the device around and have fun with friends, but more often just use it at home.</p>
+<p>That means we need to reconfigure the balance between two modes and come up with a design a lot more friendly for single player. The AI controlled partner suggestion actually  is very good, we will definitely consider doing it.</p>
+<ul>
+<li>The art style is not consistent. It&#8217;s way darker in the title screen but looks toony in the real game.</li>
+</ul>
+<p>I have to admit that other than the awesome main character design, we struggled quite a lot trying to pull together zombies and overall art style. At the beginning we have the ambition to target the game market not only to core gamers, but also light users especially female players. One of the core idea about the project is to make a shooter game that can be played by couples. Because we let two players share the dual stick control, it&#8217;s much easier to let female players get into the shooter world and maybe taught the basic ideas by her friend. So at the beginning the art style is more cartoony and friendly to female users.</p>
+<p>When we realized that the current market is not ready for a multiplayer focused game &#8211; so that not many female users will likely pick up the game at all &#8211; we start to consider the game back to the track of a hardcore shooter game. Then we want to make the game a little bit more cult like, by making the kids killing zombies in a much more gored way. Although the idea is not yet implemented (you can only sense it from the title image), we are still seemingly lost.</p>
+<ul>
+<li>Lack of content. (more weapons, more zombie types and more Boss enemy!)</li>
+</ul>
+<p>It&#8217;s called alpha but to be honest this build is only a core gameplay demo. We can for sure add up content to make it more playable, but still this requires a lot of work and we have to make sure the core gameplay is fun enough before start adding up content.  This is an issue spotted by both industry veterans and normal users. While most veterans think the lack of content is not too bad compare to the lack of emphasize on the core features, normal users want additional content more than anything else.</p>
+<ul>
+<li>The pace is not fast enough, also picking up ammo is not necessary for a shoot-em-up.</li>
+</ul>
+<p>I&#8217;m open to this opinion, but still it depends on the overall style. If it&#8217;s arcade like fast moving, tons of enemy to eliminate, then of course we can speed things up and remove ammo consumption. We are still not 100% sure about the style. As I said at the beginning there&#8217;s a lot of design made for light users. For example enemy not moving too fast, there&#8217;re not too many zombies on the same screen (good for skinning mesh performance xD), and zombie drops ammo to make sure player not standing still.</p>
+<p><img class="alignnone size-full wp-image-261" title="45view02" src="http://abitgames.com/old-blog/ex/wp-content/uploads/2011/03/45view02.jpg" alt="" width="400" height="211" /></p>
+<p>[heading h="2"]What We&#8217;ve Learnt[/heading]</p>
+<p>First of all, the control scheme should be tested way earlier. Actually for a shooting or action game the control scheme is pretty much the core. Besides, we shouldn&#8217;t design the multiplayer first. Believe or not, most of the iPad user don&#8217;t have a friend or family to play such a shooting game with. Their girlfriend would rather watching them play Angry Birds or Cut the Rope, than play a co-op shooting game together.</p>
+<p>Only 3 of our 12 testers have played multiplayer mode with their family/friend. Let&#8217;s face it: today it&#8217;s easy to let girls play a video game but only very few of them want to play a shooter.</p>
+<p>Then it&#8217;s the consistency. We should stick to one style of gameplay and design features accordingly. After the fail of pitching the game as a &#8220;play with your girlfriend shooter&#8221;, guess we&#8217;d better make it arcade like, fast pace and tons of zombie and gore.</p>
+<p><img class="alignnone size-full wp-image-260" title="45view01" src="http://abitgames.com/old-blog/ex/wp-content/uploads/2011/03/45view01.jpg" alt="" width="400" height="211" /></p>
+<p>[heading h="2"]What&#8217;s Next[/heading]</p>
+<p>Nobody think the game is totally crap. But also most of them are not impressed. That means we need to completely re-evaluate the design beats.</p>
+<p>We will probably keep the multiplayer design but definitely re-design the single player to make the core gameplay solid enough. If we do that we will need 2 month to make another prototype and release for a test again. And if everything goes right, we still need another 3 month to polish and adding content. That&#8217;s too long and too risky.</p>
+<p>Before we made and released the alpha build, we had decided that if we can&#8217;t finish the game in 2 month after all, we will freeze this project and move on to a much smaller scale project first. Some may disagree but I don&#8217;t think it&#8217;s a good idea to stick to something that would not impress people.</p>
+<p>We started Boom Twins as a training project but as it went on we got higher expectation and wanted to make it to the app store. But in reality, the core mechanic is not solid and target market is evaluated totally incorrect. That&#8217;s when to call a timeout.</p>
+<p>We really appreciate all the input from you guys, especially the ones that encourage us to finish the game. But still we&#8217;re doing this for business not for hobby. It&#8217;s also very tough for us but all the experience we got (especially remote collaboration work-flow wise) in this 7 months, as well as the alpha test feedback are most valuable for us.</p>
+<p>We already started moving on, new project information will be posted soon.</p>
+<p>Love you all,</p>
+<p>&nbsp;</p>
+<p>aBit Games Team</p>
+<p>&nbsp;</p>
+<div class="addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url='http://abitgames.com/old-blog/2011/blog/boom-twins-alpha-report/' addthis:title='Boom Twins Alpha Report: What We&#8217;ve Learnt ' ><a class="addthis_button_preferred_1"></a><a class="addthis_button_preferred_2"></a><a class="addthis_button_preferred_3"></a><a class="addthis_button_preferred_4"></a><a class="addthis_button_compact"></a></div></div><!-- .entry-content -->
+
+<div class="meta-below-content entry-meta clearfix">
+<div class="left">
+0 Comments - <a href="http://abitgames.com/old-blog/2011/blog/boom-twins-alpha-report/#respond" title="Respond to Boom Twins Alpha Report: What We&#8217;ve Learnt" class="entry-respond">Leave a comment!</a>
+</div><!-- .left -->
+</div><!-- .entry-meta -->
+</div><!-- .post-251 -->
+
+<div id="nav-below-single" class="nav-below navigation clearfix"><div class="nav-previous"><a href="http://abitgames.com/old-blog/2011/blog/boom-twins-alpha-closed/" rel="prev"><span class="meta-nav">&laquo;</span> Previous Post</a></div><div class="nav-next"><a href="http://abitgames.com/old-blog/2011/blog/new-project-is-almostready-for-a-test/" rel="next">Next Post <span class="meta-nav">&raquo;</span></a></div></div><!-- #nav-below-single -->
+<div id="disqus_thread">
+    </div>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+    var disqus_url = 'http://abitgames.com/old-blog/2011/blog/boom-twins-alpha-report/';
+    var disqus_identifier = '251 http://abitgames.com/old-blog/?p=251';
+    var disqus_container_id = 'disqus_thread';
+    var disqus_domain = 'disqus.com';
+    var disqus_shortname = 'abitgames';
+    var disqus_title = "Boom Twins Alpha Report: What We&#8217;ve Learnt";
+        var disqus_config = function () {
+        var config = this; // Access to the config object
+
+        /*
+           All currently supported events:
+            * preData — fires just before we request for initial data
+            * preInit - fires after we get initial data but before we load any dependencies
+            * onInit  - fires when all dependencies are resolved but before dtpl template is rendered
+            * afterRender - fires when template is rendered but before we show it
+            * onReady - everything is done
+         */
+
+        config.callbacks.preData.push(function() {
+            // clear out the container (its filled for SEO/legacy purposes)
+            document.getElementById(disqus_container_id).innerHTML = '';
+        });
+                config.callbacks.onReady.push(function() {
+            // sync comments in the background so we don't block the page
+            var script = document.createElement('script');
+            script.async = true;
+            script.src = '?cf_action=sync_comments&post_id=251';
+
+            var firstScript = document.getElementsByTagName( "script" )[0];
+            firstScript.parentNode.insertBefore(script, firstScript);
+        });
+                    };
+    var facebookXdReceiverPath = 'http://abitgames.com/old-blog/ex/wp-content/plugins/disqus-comment-system/xd_receiver.htm';
+/* ]]> */
+</script>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+    var DsqLocal = {
+        'trackbacks': [
+        ],
+        'trackback_url': "http:\/\/abitgames.com\/2011\/blog\/boom-twins-alpha-report\/trackback\/"    };
+/* ]]> */
+</script>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript';
+    dsq.async = true;
+        dsq.src = 'http' + '://' + disqus_shortname + '.' + 'disqus.com' + '/embed.js?pname=wordpress&pver=2.73';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+/* ]]> */
+</script>
+</div><!-- .leaf-content -->
+</div><!-- .headway-leaf-inside -->
+</div><!-- #leaf-1 -->
+
+
+
+<div class="sidebar box-no-title fluid-height headway-leaf" id="leaf-2">
+<div class="headway-leaf-inside">
+<div class="leaf-content">
+	<ul class="sidebar">
+	<li id="social-widget-3" class="widget Social_Widget"><span class="widget-title">Stay tuned!</span>
+<div class="socialmedia-buttons smw_left"><a href="http://facebook.com/abitgames" rel="nofollow" target="_blank"><img src="http://abitgames.com/old-blog/ex/wp-content/plugins/social-media-widget/images/sketch/32/facebook.png" alt="Follow or Subscribe on Facebook" title="Follow or Subscribe on Facebook"  style="opacity: 0.8; -moz-opacity: 0.8;" class="fade" /></a><a href="http://twitter.com/abitgames" rel="nofollow" target="_blank"><img src="http://abitgames.com/old-blog/ex/wp-content/plugins/social-media-widget/images/sketch/32/twitter.png" alt="Follow or Subscribe on Twitter" title="Follow or Subscribe on Twitter"  style="opacity: 0.8; -moz-opacity: 0.8;" class="fade" /></a><a href="http://youtube.com/abitgamesstudio" rel="nofollow" target="_blank"><img  src="http://abitgames.com/old-blog/ex/wp-content/plugins/social-media-widget/images/sketch/32/youtube.png" alt="Follow or Subscribe on YouTube" title="Follow or Subscribe on YouTube"  style="opacity: 0.8; -moz-opacity: 0.8;" class="fade" /></a><a href="http://abitgames.deviantart.com" rel="nofollow" target="_blank"><img src="http://abitgames.com/old-blog/ex/wp-content/plugins/social-media-widget/images/sketch/32/deviantart.png" alt="Follow or Subscribe on DeviantArt" title="Follow or Subscribe on DeviantArt"  style="opacity: 0.8; -moz-opacity: 0.8;" class="fade" /></a><a href="http://feedburner.google.com/fb/a/mailverify?uri=aBitGames" rel="nofollow" target="_blank"><img src="http://abitgames.com/old-blog/ex/wp-content/plugins/social-media-widget/images/sketch/32/email.png" alt="Follow or Subscribe on Email Delivery" title="Follow or Subscribe on Email Delivery"  style="opacity: 0.8; -moz-opacity: 0.8;" class="fade" width="32" height="32" /></a><a href="http://feeds.feedburner.com/aBitGames" rel="nofollow" target="_blank"><img  src="http://abitgames.com/old-blog/ex/wp-content/plugins/social-media-widget/images/sketch/32/rss.png" alt="Follow or Subscribe on RSS" title="Follow or Subscribe on RSS"  style="opacity: 0.8; -moz-opacity: 0.8;" class="fade" /></a></div></li>
+	</ul>
+</div><!-- .leaf-content -->
+</div><!-- .headway-leaf-inside -->
+</div><!-- #leaf-2 -->
+
+
+
+<div class="html box-no-title headway-leaf" id="leaf-31">
+<div class="headway-leaf-inside">
+<div class="leaf-content">
+<a href="http://www.ex-dev.com/ex2d/"><img src="http://abitgames.com/old-blog/ex/wp-content/uploads/2011/09/ex2D_icon.png"></a>
+<br>
+<a href="http://www.ex-dev.com/ex2d/">ex2D: The Best Sprite Solution For Unity! More purchase options are available at our web store! </a>
+</div><!-- .leaf-content -->
+</div><!-- .headway-leaf-inside -->
+</div><!-- #leaf-31 -->
+
+
+
+<div class="html box-no-title headway-leaf" id="leaf-30">
+<div class="headway-leaf-inside">
+<div class="leaf-content">
+<a href="http://itunes.apple.com/us/app/super-sheep-tap/id445995907?mt=8&ls=1"><img src="http://abitgames.com/old-blog/ex/wp-content/uploads/2011/09/sstAD.png"></a>
+<br>
+<a href="http://itunes.apple.com/us/app/super-sheep-tap/id445995907?mt=8&ls=1">
+Super Sheep Tap: A Cute Game Challenges Your Finger Dexterity and Reflex!</a></div><!-- .leaf-content -->
+</div><!-- .headway-leaf-inside -->
+</div><!-- #leaf-30 -->
+
+
+
+<div class="sidebar box-no-title fluid-height headway-leaf" id="leaf-33">
+<div class="headway-leaf-inside">
+<div class="leaf-content">
+	<ul class="sidebar">
+	<li id="tag_cloud-4" class="widget widget_tag_cloud"><span class="widget-title">Tags</span>
+<div class="tagcloud"><a href='http://abitgames.com/old-blog/tag/achievement/' class='tag-link-46' title='1 topic' style='font-size: 8pt;'>achievement</a>
+<a href='http://abitgames.com/old-blog/tag/alpha/' class='tag-link-26' title='1 topic' style='font-size: 8pt;'>alpha</a>
+<a href='http://abitgames.com/old-blog/tag/apps/' class='tag-link-34' title='2 topics' style='font-size: 10.625pt;'>apps</a>
+<a href='http://abitgames.com/old-blog/tag/appstore/' class='tag-link-36' title='1 topic' style='font-size: 8pt;'>appstore</a>
+<a href='http://abitgames.com/old-blog/tag/artwork/' class='tag-link-23' title='4 topics' style='font-size: 13.833333333333pt;'>artwork</a>
+<a href='http://abitgames.com/old-blog/tag/boomtwins/' class='tag-link-20' title='1 topic' style='font-size: 8pt;'>BoomTwins</a>
+<a href='http://abitgames.com/old-blog/tag/collaboration/' class='tag-link-33' title='1 topic' style='font-size: 8pt;'>collaboration</a>
+<a href='http://abitgames.com/old-blog/tag/contest/' class='tag-link-50' title='4 topics' style='font-size: 13.833333333333pt;'>contest</a>
+<a href='http://abitgames.com/old-blog/tag/design/' class='tag-link-16' title='2 topics' style='font-size: 10.625pt;'>design</a>
+<a href='http://abitgames.com/old-blog/tag/ex2d/' class='tag-link-41' title='14 topics' style='font-size: 20.833333333333pt;'>ex2D</a>
+<a href='http://abitgames.com/old-blog/tag/flash/' class='tag-link-49' title='1 topic' style='font-size: 8pt;'>flash</a>
+<a href='http://abitgames.com/old-blog/tag/github/' class='tag-link-42' title='1 topic' style='font-size: 8pt;'>github</a>
+<a href='http://abitgames.com/old-blog/tag/giveaway/' class='tag-link-51' title='2 topics' style='font-size: 10.625pt;'>giveaway</a>
+<a href='http://abitgames.com/old-blog/tag/guide/' class='tag-link-47' title='1 topic' style='font-size: 8pt;'>guide</a>
+<a href='http://abitgames.com/old-blog/tag/icountsheep/' class='tag-link-29' title='2 topics' style='font-size: 10.625pt;'>iCountSheep</a>
+<a href='http://abitgames.com/old-blog/tag/igf/' class='tag-link-45' title='2 topics' style='font-size: 10.625pt;'>igf</a>
+<a href='http://abitgames.com/old-blog/tag/indiegame/' class='tag-link-55' title='1 topic' style='font-size: 8pt;'>indiegame</a>
+<a href='http://abitgames.com/old-blog/tag/moneywitches/' class='tag-link-53' title='4 topics' style='font-size: 13.833333333333pt;'>MoneyWitches</a>
+<a href='http://abitgames.com/old-blog/tag/openfeint/' class='tag-link-38' title='1 topic' style='font-size: 8pt;'>openfeint</a>
+<a href='http://abitgames.com/old-blog/tag/postmortem/' class='tag-link-27' title='1 topic' style='font-size: 8pt;'>postmortem</a>
+<a href='http://abitgames.com/old-blog/tag/pressrelease/' class='tag-link-52' title='1 topic' style='font-size: 8pt;'>PressRelease</a>
+<a href='http://abitgames.com/old-blog/tag/programming/' class='tag-link-31' title='1 topic' style='font-size: 8pt;'>programming</a>
+<a href='http://abitgames.com/old-blog/tag/promotion/' class='tag-link-37' title='1 topic' style='font-size: 8pt;'>promotion</a>
+<a href='http://abitgames.com/old-blog/tag/release/' class='tag-link-21' title='5 topics' style='font-size: 15pt;'>release</a>
+<a href='http://abitgames.com/old-blog/tag/screenshot/' class='tag-link-25' title='3 topics' style='font-size: 12.375pt;'>screenshot</a>
+<a href='http://abitgames.com/old-blog/tag/spawn/' class='tag-link-17' title='1 topic' style='font-size: 8pt;'>spawn</a>
+<a href='http://abitgames.com/old-blog/tag/story/' class='tag-link-19' title='4 topics' style='font-size: 13.833333333333pt;'>story</a>
+<a href='http://abitgames.com/old-blog/tag/supersheeptap/' class='tag-link-35' title='5 topics' style='font-size: 15pt;'>SuperSheepTap</a>
+<a href='http://abitgames.com/old-blog/tag/test/' class='tag-link-3' title='2 topics' style='font-size: 10.625pt;'>test</a>
+<a href='http://abitgames.com/old-blog/tag/trailer/' class='tag-link-54' title='1 topic' style='font-size: 8pt;'>trailer</a>
+<a href='http://abitgames.com/old-blog/tag/tutorial/' class='tag-link-43' title='5 topics' style='font-size: 15pt;'>tutorial</a>
+<a href='http://abitgames.com/old-blog/tag/unity3d/' class='tag-link-30' title='17 topics' style='font-size: 22pt;'>unity3d</a>
+<a href='http://abitgames.com/old-blog/tag/video/' class='tag-link-32' title='8 topics' style='font-size: 17.479166666667pt;'>video</a>
+<a href='http://abitgames.com/old-blog/tag/wallpaper/' class='tag-link-22' title='2 topics' style='font-size: 10.625pt;'>wallpaper</a></div>
+</li>
+<li id="archives-3" class="widget widget_archive"><span class="widget-title">Archives</span>
+		<ul>
+			<li><a href='http://abitgames.com/old-blog/2012/08/' title='August 2012'>August 2012</a></li>
+	<li><a href='http://abitgames.com/old-blog/2012/05/' title='May 2012'>May 2012</a></li>
+	<li><a href='http://abitgames.com/old-blog/2012/04/' title='April 2012'>April 2012</a></li>
+	<li><a href='http://abitgames.com/old-blog/2012/03/' title='March 2012'>March 2012</a></li>
+	<li><a href='http://abitgames.com/old-blog/2012/02/' title='February 2012'>February 2012</a></li>
+	<li><a href='http://abitgames.com/old-blog/2012/01/' title='January 2012'>January 2012</a></li>
+	<li><a href='http://abitgames.com/old-blog/2011/11/' title='November 2011'>November 2011</a></li>
+	<li><a href='http://abitgames.com/old-blog/2011/10/' title='October 2011'>October 2011</a></li>
+	<li><a href='http://abitgames.com/old-blog/2011/09/' title='September 2011'>September 2011</a></li>
+	<li><a href='http://abitgames.com/old-blog/2011/08/' title='August 2011'>August 2011</a></li>
+	<li><a href='http://abitgames.com/old-blog/2011/07/' title='July 2011'>July 2011</a></li>
+	<li><a href='http://abitgames.com/old-blog/2011/06/' title='June 2011'>June 2011</a></li>
+	<li><a href='http://abitgames.com/old-blog/2011/05/' title='May 2011'>May 2011</a></li>
+	<li><a href='http://abitgames.com/old-blog/2011/03/' title='March 2011'>March 2011</a></li>
+	<li><a href='http://abitgames.com/old-blog/2011/02/' title='February 2011'>February 2011</a></li>
+	<li><a href='http://abitgames.com/old-blog/2010/12/' title='December 2010'>December 2010</a></li>
+		</ul>
+</li>
+<li id="linkcat-44" class="widget widget_links"><span class="widget-title">Indie Game Commnuity</span>
+
+	<ul class='xoxo blogroll'>
+<li><a href="http://fenglee.com/" rel="friend" title="Flash game developer, creator of &#8220;Arcuz&#8221;" target="_blank" onclick="javascript:_gaq.push(['_trackEvent','outbound-blogroll','http://fenglee.com/']);">Feng‘s Game</a></li>
+<li><a href="http://www.inpla.net" rel="friend" title="Indie game news and showcases!" target="_blank" onclick="javascript:_gaq.push(['_trackEvent','outbound-blogroll','http://www.inpla.net']);">IN星球 &#8211; 独立游戏网站</a></li>
+<li><a href="http://ggpdf.com/" rel="friend" title="精品独立游戏的pdf格式攻略汇总" target="_blank" onclick="javascript:_gaq.push(['_trackEvent','outbound-blogroll','http://ggpdf.com/']);">玩乐手帐</a></li>
+
+	</ul>
+</li>
+
+	</ul>
+</div><!-- .leaf-content -->
+</div><!-- .headway-leaf-inside -->
+</div><!-- #leaf-33 -->
+
+</div><!-- #container -->
+<div id="footer">
+<p class="footer-left" id="footer-headway-link">Powered by Headway, the  <a href="http://www.headwaythemes.com/" title="Headway Premium WordPress Theme">drag and drop WordPress theme</a></p><a href="#top" class="footer-right" id="footer-go-to-top-link">Go To Top</a><a href="http://abitgames.com/old-blog/ex/wp-admin" class="footer-right" id="footer-admin-link">Administration Login</a><p class="copyright" id="footer-copyright">Copyright &copy; 2014 aBit Games</p>
+</div><!-- #footer --><div class="clear"></div><!-- Clear in case footer is missing. -->
+</div><!-- #wrapper -->
+</div><!-- #whitewrap -->
+<script type="text/javascript">
+
+var addthis_config = {"data_track_clickback":true,"data_track_addressbar":false,"data_track_textcopy":false};
+var addthis_product = 'wpp-265';
+</script><script type="text/javascript" src="//s7.addthis.com/js/250/addthis_widget.js#pubid=nantas"></script><script type="text/javascript"></script><!--wp_footer--></body>
+</html>

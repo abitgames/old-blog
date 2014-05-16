@@ -1,0 +1,419 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:addthis="http://www.addthis.com/help/api-spec" >
+<head profile="http://gmpg.org/xfn/11">
+	
+<title>ex2D for Unity video Tutorial episode 2: advanced animation | aBit Games</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+				
+	<script type="text/javascript">//<![CDATA[
+	// Google Analytics for WordPress by Yoast v4.2.3 | http://yoast.com/wordpress/google-analytics/
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount','UA-20266698-1']);
+	_gaq.push(['_setCustomVar',2,'author','nantas',3],['_setCustomVar',3,'tags','ex2d tutorial unity3d video',3],['_setCustomVar',4,'year','2011',3],['_setCustomVar',5,'categories','blog',3],['_trackPageview']);
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+	//]]></script>
+
+
+<!-- Stylesheets -->
+<link rel="stylesheet" type="text/css" href="http://abitgames.com/old-blog/ex/wp-content/themes/headway-2014/style.css" id="style" />
+<link rel="stylesheet" type="text/css" href="http://abitgames.com/old-blog/ex/wp-content/themes/headway-2014/media/cache/headway.css?1399235379" /><!-- Headway Elements -->
+<link rel="stylesheet" type="text/css" href="http://abitgames.com/old-blog/ex/wp-content/themes/headway-2014/media/cache/leafs.css?1399235379" /><!-- Headway Leaf Sizing -->
+<link rel="stylesheet" type="text/css" href="http://abitgames.com/old-blog/ex/wp-content/themes/headway-2014/custom.css?1373649742" /><!-- Headway Custom CSS -->
+
+<link rel='stylesheet' id='NextGEN-css'  href='http://abitgames.com/old-blog/ex/wp-content/plugins/nextgen-gallery/css/ngg_k2.css?ver=1.0.0' type='text/css' media='screen' />
+<link rel='stylesheet' id='shutter-css'  href='http://abitgames.com/old-blog/ex/wp-content/plugins/nextgen-gallery/shutter/shutter-reloaded.css?ver=1.3.4' type='text/css' media='screen' />
+
+<!--[if lte IE 7]>
+	<link rel="stylesheet" type="text/css" href="http://abitgames.com/old-blog/ex/wp-content/themes/headway-2014/media/css/ie/ie.css" />
+<![endif]-->
+
+<!--[if IE 6]>
+	<link rel="stylesheet" type="text/css" href="http://abitgames.com/old-blog/ex/wp-content/themes/headway-2014/media/css/ie/ie6.css" />
+	
+	<script type="text/javascript" src="http://abitgames.com/old-blog/ex/wp-content/themes/headway-2014/media/js/ie6.js"></script>
+<![endif]-->
+
+<!--[if IE 7]>
+	<link rel="stylesheet" type="text/css" href="http://abitgames.com/old-blog/ex/wp-content/themes/headway-2014/media/css/ie/ie7.css" />
+<![endif]-->
+
+
+<!-- Scripts -->
+<script type='text/javascript' src='http://abitgames.com/old-blog/ex/wp-content/plugins/swfobj/swfobject.js?ver=2.2'></script>
+<script type='text/javascript' src='http://abitgames.com/old-blog/ex/wp-includes/js/comment-reply.min.js?ver=3.5.2'></script>
+<script type='text/javascript' src='http://abitgames.com/old-blog/ex/wp-includes/js/jquery/jquery.js?ver=1.8.3'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var shutterSettings = {"msgLoading":"L O A D I N G","msgClose":"Click to Close","imageCount":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://abitgames.com/old-blog/ex/wp-content/plugins/nextgen-gallery/shutter/shutter-reloaded.js?ver=1.3.3'></script>
+<script type='text/javascript' src='http://abitgames.com/old-blog/ex/wp-content/plugins/nextgen-gallery/js/jquery.cycle.all.min.js?ver=2.9995'></script>
+<script type='text/javascript' src='http://abitgames.com/old-blog/ex/wp-content/plugins/nextgen-gallery/js/ngg.slideshow.min.js?ver=1.06'></script>
+
+
+
+<!-- Extras -->
+
+
+
+
+ 
+
+<link rel='next' title='Concept Art for Upcoming Project' href='http://abitgames.com/old-blog/2011/blog/concept-art-1-for-upcoming-project/' />
+
+<link rel='shortlink' href='http://abitgames.com/old-blog/?p=573' />
+
+<!-- All in One SEO Pack 1.6.14.6 by Michael Torbert of Semper Fi Web Design[320,396] -->
+<meta name="description" content="ex2D is a unity3d extension that provides a powerful but easy to use 2D sprite solution. check out the combined power of unity animation and sprite animation!" />
+<meta name="keywords" content="ex2d, sprite, unity, unity3d, sprite animation, plugin, tutorial,tutorial,unity3d,video" />
+<link rel="canonical" href="http://abitgames.com/old-blog/2011/blog/ex2d-video-tutorial-episode-2-combined-animation-power/" />
+<!-- /all in one seo pack -->
+<!-- <meta name="NextGEN" version="1.9.5" /> -->
+<meta property="og:image" content="http://i.ytimg.com/vi/MgyC8ipK30A/default.jpg" /><link rel="stylesheet" type="text/css" href="http://abitgames.com/old-blog/ex/wp-content/plugins/social-media-widget/social_widget.css" />
+
+
+</head><!-- End <head>
+<base href="http://abitgames.com/old-blog" />
+ -->
+
+
+<body class="custom header-fixed footer-fixed single s-category-blog s-author-nantas">
+
+
+
+<div id="whitewrap" class="clearfix">
+<div id="wrapper">
+
+<div id="header" class="header-image header-rearrange-item-1">
+<div id="top" class="header-link-image header-link-top clearfix"><a href="http://abitgames.com/old-blog" title="aBit Games" rel="home nofollow" class="header-link-image-inside"><img src="http://abitgames.com/old-blog/ex/wp-content/uploads/headway/header-uploads/blogheader.png" alt="aBit Games" />
+</a></div>
+</div><!-- #header -->
+
+<div id="navigation" class="clearfix header-rearrange-item-2 navigation-left">
+<ul id="menu-navigation" class="navigation breadcrumb-active navigation-left"><li class="page-item-1"><a href="http://abitgames.com/old-blog"  rel="nofollow" >Home</a></li><li id="menu-item-855" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-855"><a href="http://moneywitches.com" onclick="javascript:_gaq.push(['_trackEvent','outbound-menu','http://moneywitches.com']);">Money Witches</a></li>
+<li id="menu-item-105" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-105"><a href="http://abitgames.com/old-blog/category/blog/" >Blog</a></li>
+<li id="menu-item-33" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33"><a href="http://abitgames.com/old-blog/about-abit-games/" >About</a></li>
+<li id="menu-item-101" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-101"><a href="http://abitgames.com/old-blog/contact-us/" >Contact Us</a></li>
+<li id="menu-item-785" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-785"><a href="http://www.ex-dev.com" onclick="javascript:_gaq.push(['_trackEvent','outbound-menu','http://www.ex-dev.com']);">exDev</a></li>
+</ul>
+<form id="header-search-bar" method="get" action="http://abitgames.com/old-blog">
+		<input id="header-search-input" name="s" type="text" value="Type here to search..." onblur="if(this.value == '') {this.value = 'Type here to search...';}" onclick="if(this.value == 'Type here to search...') {this.value = '';}" accesskey="S" />
+</form>
+
+</div><!-- #navigation -->
+
+<div id="breadcrumbs" class="header-rearrange-item-3"><p>You Are Here: &nbsp; <a href="http://abitgames.com/old-blog">Home</a> &raquo; <a href="http://abitgames.com/old-blog/category/blog/" title="View all posts in Blog" rel="category tag">Blog</a> &raquo; <span id="current-breadcrumb">ex2D Video Tutorial Episode 2: Combined Animation Power!</span>
+</p></div><!-- #breadcrumbs -->
+
+<div id="container" class="container">
+
+<div class="content box-no-title fluid-height headway-leaf" id="leaf-1">
+<div class="headway-leaf-inside">
+<div class="leaf-content">
+
+<div id="post-573" class="hentry post author-nantas category-blog format-video">
+<h1 class="entry-title">ex2D Video Tutorial Episode 2: Combined Animation Power!</h1>
+
+<div class="meta-below-title entry-meta clearfix clearfix-title">
+<div class="left">
+Written on <span class="entry-date published">August 13, 2011</span> by <a rel="author" class="author-link fn nickname url" href="http://abitgames.com/old-blog/author/nantas/" title="View all posts by nantas">nantas</a> in <a href="http://abitgames.com/old-blog/category/blog/" title="View all posts in Blog" rel="category tag">Blog</a>
+</div><!-- .left -->
+</div><!-- .entry-meta -->
+<div class="entry-content">
+<p><span class="youtube"><iframe title="YouTube video player" class="youtube-player" type="text/html" width="480" height="295" src="http://www.youtube.com/embed/MgyC8ipK30A?wmode=transparent&amp;fs=1&amp;hl=en&amp;modestbranding=1&amp;iv_load_policy=3&amp;showsearch=0&amp;rel=1&amp;theme=dark&amp;hd=1" frameborder="0" allowfullscreen></iframe></span></p>
+<p>Another episode of ex2D for Unity video tutorial series! This time we are going to combine the power of Unity animation view and ex2D sprite animation editor, to create professional 2D sprite animation and cinematics! With ex2D sprite animation editor, you can attach event to a certain frame in the timeline, and use the event to trigger another animation or change animation state in your script!</p>
+<p>The ex2D tool set is designed to fully integrated into Unity editor environment. You will hardly feel use an external tool! The seamless connection between Unity animation and ex2D sprite animation will bring so much power to your 2D sprite based game!</p>
+<p>Again checkout the link below for more information about ex2D:</p>
+<p><a href="http://www.ex-dev.com/ex2d/index.html" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://www.ex-dev.com']);" target="_blank">ex2D homepage</a></p>
+<p><a href="http://forum.unity3d.com/threads/99947-ex2D-the-best-2D-sprite-solution-for-Unity-last-beta-before-release!" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://forum.unity3d.com']);" target="_blank">ex2D discussion thread on Unity Community</a></p>
+<p>It will be released in Unity AssetStore soon, stay tuned!</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<div id="-chrome-auto-translate-plugin-dialog" style="display: none; opacity: 1 !important; border-color: none !important; background: transparent !important; padding: 0 !important; margin: 0 !important; position: absolute !important; top: 0; left: 0; overflow: visible !important; z-index: 999999 !important; text-align: left !important;">
+<div style="max-width: 300px !important; color: #fafafa !important; opacity: 0.8 !important; border-color: #000000 !important; border-width: 0px !important; -webkit-border-radius: 10px !important; background-color: #363636 !important; font-size: 16px !important; padding: 8px !important; overflow: visible !important; background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #000), color-stop(50%, #363636), color-stop(100%, #000)); z-index: 999999 !important; text-align: left  !important;"></div>
+<p><img style="position: absolute !important; z-index: -1 !important; right: 1px !important; top: -20px !important; cursor: pointer !important; -webkit-border-radius: 20px; background-color: rgba(200, 200, 200, 0.3) !important; padding: 3px 5px 0 !important; margin: 0 !important;" onclick="document.location.href='http://translate.google.com/';" src="http://www.google.com/uds/css/small-logo.png" alt="" /></div>
+<div class="addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url='http://abitgames.com/old-blog/2011/blog/ex2d-video-tutorial-episode-2-combined-animation-power/' addthis:title='ex2D Video Tutorial Episode 2: Combined Animation Power! ' ><a class="addthis_button_preferred_1"></a><a class="addthis_button_preferred_2"></a><a class="addthis_button_preferred_3"></a><a class="addthis_button_preferred_4"></a><a class="addthis_button_compact"></a></div></div><!-- .entry-content -->
+
+<div class="meta-below-content entry-meta clearfix">
+<div class="left">
+4 Comments - <a href="http://abitgames.com/old-blog/2011/blog/ex2d-video-tutorial-episode-2-combined-animation-power/#respond" title="Respond to ex2D Video Tutorial Episode 2: Combined Animation Power!" class="entry-respond">Leave a comment!</a>
+</div><!-- .left -->
+</div><!-- .entry-meta -->
+</div><!-- .post-573 -->
+
+<div id="nav-below-single" class="nav-below navigation clearfix"><div class="nav-previous"><a href="http://abitgames.com/old-blog/2011/blog/ex2d-beta2-released/" rel="prev"><span class="meta-nav">&laquo;</span> Previous Post</a></div><div class="nav-next"><a href="http://abitgames.com/old-blog/2011/blog/concept-art-1-for-upcoming-project/" rel="next">Next Post <span class="meta-nav">&raquo;</span></a></div></div><!-- #nav-below-single -->
+<div id="disqus_thread">
+                    <div id="dsq-content">
+
+
+            <ul id="dsq-comments">
+                    <li class="comment even thread-even depth-1" id="dsq-comment-63">
+        <div id="dsq-comment-header-63" class="dsq-comment-header">
+            <cite id="dsq-cite-63">
+                <span id="dsq-author-user-63">Sordonom</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-63" class="dsq-comment-body">
+            <div id="dsq-comment-message-63" class="dsq-comment-message"><p>Hi, Im thinking of getting Ex2D, it looks good. But I&#8217;m also interested in the tile map editor and I&#8217;m wondering if I buy you Ex2D, will I have free access to future versions that include the tile map editor or you plan on making it a different product?.<br />
+Thanks!</p>
+</div>
+        </div>
+    </li>
+
+    <ul class='children'>
+    <li class="comment odd alt depth-2" id="dsq-comment-64">
+        <div id="dsq-comment-header-64" class="dsq-comment-header">
+            <cite id="dsq-cite-64">
+                <span id="dsq-author-user-64">Anonymous</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-64" class="dsq-comment-body">
+            <div id="dsq-comment-message-64" class="dsq-comment-message"><p>Hi Sordonom,</p>
+<p>Thanks for your interest! ex2D is now available on Asset Store. The price is $25.<br />
+We believe it&#8217;s a very reasonable price for the original package. So any new powerful features (tile map editor, skeleton sprite animation editor, etc) that we are developing will be add-ons and need to be purchased separately.<br />
+But we will keep the price for each part affordable for everyone. This way we can make sure our users only need to pay for what they need.</p>
+<p>Have a good day!</p>
+<p>nan</p>
+</div>
+        </div>
+    </li>
+
+    <ul class='children'>
+    <li class="comment even depth-3" id="dsq-comment-65">
+        <div id="dsq-comment-header-65" class="dsq-comment-header">
+            <cite id="dsq-cite-65">
+                <span id="dsq-author-user-65">Sordonom</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-65" class="dsq-comment-body">
+            <div id="dsq-comment-message-65" class="dsq-comment-message"><p>Hey thanks for your quick answer!. I see&#8230; I understand that the new features are worth enough for an add-on extra price tag. Is ok, as you mention, you are keeping a really affordable price for ex2D so I can expect the same policy for the add-ons. I just wanted to ask because is not uncommon to find &#8220;trapware&#8221; on internet, something that you buy really cheap but to get it fully funtional, you need to cash big $</p>
+<p>Believe me, I think your pricing policy is really good. I&#8217;m thinking of getting ex2D (almost 100% sure) and just barely read about it, just enough to know it cover my needs. Also, never seen one of your video tutorial, and will not see one probably until I got it and need to use how to use it. The price tag is good enough to made you think you will get enough value from it, in a way or another, so you can say it&#8217;s a selling tool. <img src='http://abitgames.com/old-blog/ex/wp-includes/images/smilies/icon_smile.gif' alt=':)' class='wp-smiley' /><br />
+Can&#8217;t say I get the same feeling with sprite manager 2, that at 199$ price tag made you really wonder if is worth it and force you to read more about it.</p>
+</div>
+        </div>
+    </li>
+
+    <ul class='children'>
+    <li class="comment odd alt depth-4" id="dsq-comment-66">
+        <div id="dsq-comment-header-66" class="dsq-comment-header">
+            <cite id="dsq-cite-66">
+                <span id="dsq-author-user-66">Anonymous</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-66" class="dsq-comment-body">
+            <div id="dsq-comment-message-66" class="dsq-comment-message"><p>We were SM2 user and back then it was the only choice if you want to get 2D stuff done. So props to them, without SM2 we wouldn&#8217;t really know how to get start and what to do with our own tools. </p>
+<p>And you can find the ex2D discussion thread on Unity forum:<br />
+<a href="http://forum.unity3d.com/threads/101811-ex2D-the-best-2D-sprite-solution-for-Unity-RELEASED" onclick="javascript:_gaq.push(['_trackEvent','outbound-comment','http://forum.unity3d.com']);" rel="nofollow">http://forum.unity3d.com/threads/101811-ex2D-the-best-2D-sprite-solution-for-Unity-RELEASED</a></p>
+<p>There are quite some happy users already <img src='http://abitgames.com/old-blog/ex/wp-includes/images/smilies/icon_biggrin.gif' alt=':D' class='wp-smiley' /> </p>
+</div>
+        </div>
+    </li>
+
+    </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+            </ul>
+
+
+        </div>
+
+    </div>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+    var disqus_url = 'http://abitgames.com/old-blog/2011/blog/ex2d-video-tutorial-episode-2-combined-animation-power/';
+    var disqus_identifier = '573 http://abitgames.com/old-blog/?p=573';
+    var disqus_container_id = 'disqus_thread';
+    var disqus_domain = 'disqus.com';
+    var disqus_shortname = 'abitgames';
+    var disqus_title = "ex2D Video Tutorial Episode 2: Combined Animation Power!";
+        var disqus_config = function () {
+        var config = this; // Access to the config object
+
+        /*
+           All currently supported events:
+            * preData — fires just before we request for initial data
+            * preInit - fires after we get initial data but before we load any dependencies
+            * onInit  - fires when all dependencies are resolved but before dtpl template is rendered
+            * afterRender - fires when template is rendered but before we show it
+            * onReady - everything is done
+         */
+
+        config.callbacks.preData.push(function() {
+            // clear out the container (its filled for SEO/legacy purposes)
+            document.getElementById(disqus_container_id).innerHTML = '';
+        });
+                config.callbacks.onReady.push(function() {
+            // sync comments in the background so we don't block the page
+            var script = document.createElement('script');
+            script.async = true;
+            script.src = '?cf_action=sync_comments&post_id=573';
+
+            var firstScript = document.getElementsByTagName( "script" )[0];
+            firstScript.parentNode.insertBefore(script, firstScript);
+        });
+                    };
+    var facebookXdReceiverPath = 'http://abitgames.com/old-blog/ex/wp-content/plugins/disqus-comment-system/xd_receiver.htm';
+/* ]]> */
+</script>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+    var DsqLocal = {
+        'trackbacks': [
+        ],
+        'trackback_url': "http:\/\/abitgames.com\/2011\/blog\/ex2d-video-tutorial-episode-2-combined-animation-power\/trackback\/"    };
+/* ]]> */
+</script>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript';
+    dsq.async = true;
+        dsq.src = 'http' + '://' + disqus_shortname + '.' + 'disqus.com' + '/embed.js?pname=wordpress&pver=2.73';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+/* ]]> */
+</script>
+</div><!-- .leaf-content -->
+</div><!-- .headway-leaf-inside -->
+</div><!-- #leaf-1 -->
+
+
+
+<div class="sidebar box-no-title fluid-height headway-leaf" id="leaf-2">
+<div class="headway-leaf-inside">
+<div class="leaf-content">
+	<ul class="sidebar">
+	<li id="social-widget-3" class="widget Social_Widget"><span class="widget-title">Stay tuned!</span>
+<div class="socialmedia-buttons smw_left"><a href="http://facebook.com/abitgames" rel="nofollow" target="_blank"><img src="http://abitgames.com/old-blog/ex/wp-content/plugins/social-media-widget/images/sketch/32/facebook.png" alt="Follow or Subscribe on Facebook" title="Follow or Subscribe on Facebook"  style="opacity: 0.8; -moz-opacity: 0.8;" class="fade" /></a><a href="http://twitter.com/abitgames" rel="nofollow" target="_blank"><img src="http://abitgames.com/old-blog/ex/wp-content/plugins/social-media-widget/images/sketch/32/twitter.png" alt="Follow or Subscribe on Twitter" title="Follow or Subscribe on Twitter"  style="opacity: 0.8; -moz-opacity: 0.8;" class="fade" /></a><a href="http://youtube.com/abitgamesstudio" rel="nofollow" target="_blank"><img  src="http://abitgames.com/old-blog/ex/wp-content/plugins/social-media-widget/images/sketch/32/youtube.png" alt="Follow or Subscribe on YouTube" title="Follow or Subscribe on YouTube"  style="opacity: 0.8; -moz-opacity: 0.8;" class="fade" /></a><a href="http://abitgames.deviantart.com" rel="nofollow" target="_blank"><img src="http://abitgames.com/old-blog/ex/wp-content/plugins/social-media-widget/images/sketch/32/deviantart.png" alt="Follow or Subscribe on DeviantArt" title="Follow or Subscribe on DeviantArt"  style="opacity: 0.8; -moz-opacity: 0.8;" class="fade" /></a><a href="http://feedburner.google.com/fb/a/mailverify?uri=aBitGames" rel="nofollow" target="_blank"><img src="http://abitgames.com/old-blog/ex/wp-content/plugins/social-media-widget/images/sketch/32/email.png" alt="Follow or Subscribe on Email Delivery" title="Follow or Subscribe on Email Delivery"  style="opacity: 0.8; -moz-opacity: 0.8;" class="fade" width="32" height="32" /></a><a href="http://feeds.feedburner.com/aBitGames" rel="nofollow" target="_blank"><img  src="http://abitgames.com/old-blog/ex/wp-content/plugins/social-media-widget/images/sketch/32/rss.png" alt="Follow or Subscribe on RSS" title="Follow or Subscribe on RSS"  style="opacity: 0.8; -moz-opacity: 0.8;" class="fade" /></a></div></li>
+	</ul>
+</div><!-- .leaf-content -->
+</div><!-- .headway-leaf-inside -->
+</div><!-- #leaf-2 -->
+
+
+
+<div class="html box-no-title headway-leaf" id="leaf-31">
+<div class="headway-leaf-inside">
+<div class="leaf-content">
+<a href="http://www.ex-dev.com/ex2d/"><img src="http://abitgames.com/old-blog/ex/wp-content/uploads/2011/09/ex2D_icon.png"></a>
+<br>
+<a href="http://www.ex-dev.com/ex2d/">ex2D: The Best Sprite Solution For Unity! More purchase options are available at our web store! </a>
+</div><!-- .leaf-content -->
+</div><!-- .headway-leaf-inside -->
+</div><!-- #leaf-31 -->
+
+
+
+<div class="html box-no-title headway-leaf" id="leaf-30">
+<div class="headway-leaf-inside">
+<div class="leaf-content">
+<a href="http://itunes.apple.com/us/app/super-sheep-tap/id445995907?mt=8&ls=1"><img src="http://abitgames.com/old-blog/ex/wp-content/uploads/2011/09/sstAD.png"></a>
+<br>
+<a href="http://itunes.apple.com/us/app/super-sheep-tap/id445995907?mt=8&ls=1">
+Super Sheep Tap: A Cute Game Challenges Your Finger Dexterity and Reflex!</a></div><!-- .leaf-content -->
+</div><!-- .headway-leaf-inside -->
+</div><!-- #leaf-30 -->
+
+
+
+<div class="sidebar box-no-title fluid-height headway-leaf" id="leaf-33">
+<div class="headway-leaf-inside">
+<div class="leaf-content">
+	<ul class="sidebar">
+	<li id="tag_cloud-4" class="widget widget_tag_cloud"><span class="widget-title">Tags</span>
+<div class="tagcloud"><a href='http://abitgames.com/old-blog/tag/achievement/' class='tag-link-46' title='1 topic' style='font-size: 8pt;'>achievement</a>
+<a href='http://abitgames.com/old-blog/tag/alpha/' class='tag-link-26' title='1 topic' style='font-size: 8pt;'>alpha</a>
+<a href='http://abitgames.com/old-blog/tag/apps/' class='tag-link-34' title='2 topics' style='font-size: 10.625pt;'>apps</a>
+<a href='http://abitgames.com/old-blog/tag/appstore/' class='tag-link-36' title='1 topic' style='font-size: 8pt;'>appstore</a>
+<a href='http://abitgames.com/old-blog/tag/artwork/' class='tag-link-23' title='4 topics' style='font-size: 13.833333333333pt;'>artwork</a>
+<a href='http://abitgames.com/old-blog/tag/boomtwins/' class='tag-link-20' title='1 topic' style='font-size: 8pt;'>BoomTwins</a>
+<a href='http://abitgames.com/old-blog/tag/collaboration/' class='tag-link-33' title='1 topic' style='font-size: 8pt;'>collaboration</a>
+<a href='http://abitgames.com/old-blog/tag/contest/' class='tag-link-50' title='4 topics' style='font-size: 13.833333333333pt;'>contest</a>
+<a href='http://abitgames.com/old-blog/tag/design/' class='tag-link-16' title='2 topics' style='font-size: 10.625pt;'>design</a>
+<a href='http://abitgames.com/old-blog/tag/ex2d/' class='tag-link-41' title='14 topics' style='font-size: 20.833333333333pt;'>ex2D</a>
+<a href='http://abitgames.com/old-blog/tag/flash/' class='tag-link-49' title='1 topic' style='font-size: 8pt;'>flash</a>
+<a href='http://abitgames.com/old-blog/tag/github/' class='tag-link-42' title='1 topic' style='font-size: 8pt;'>github</a>
+<a href='http://abitgames.com/old-blog/tag/giveaway/' class='tag-link-51' title='2 topics' style='font-size: 10.625pt;'>giveaway</a>
+<a href='http://abitgames.com/old-blog/tag/guide/' class='tag-link-47' title='1 topic' style='font-size: 8pt;'>guide</a>
+<a href='http://abitgames.com/old-blog/tag/icountsheep/' class='tag-link-29' title='2 topics' style='font-size: 10.625pt;'>iCountSheep</a>
+<a href='http://abitgames.com/old-blog/tag/igf/' class='tag-link-45' title='2 topics' style='font-size: 10.625pt;'>igf</a>
+<a href='http://abitgames.com/old-blog/tag/indiegame/' class='tag-link-55' title='1 topic' style='font-size: 8pt;'>indiegame</a>
+<a href='http://abitgames.com/old-blog/tag/moneywitches/' class='tag-link-53' title='4 topics' style='font-size: 13.833333333333pt;'>MoneyWitches</a>
+<a href='http://abitgames.com/old-blog/tag/openfeint/' class='tag-link-38' title='1 topic' style='font-size: 8pt;'>openfeint</a>
+<a href='http://abitgames.com/old-blog/tag/postmortem/' class='tag-link-27' title='1 topic' style='font-size: 8pt;'>postmortem</a>
+<a href='http://abitgames.com/old-blog/tag/pressrelease/' class='tag-link-52' title='1 topic' style='font-size: 8pt;'>PressRelease</a>
+<a href='http://abitgames.com/old-blog/tag/programming/' class='tag-link-31' title='1 topic' style='font-size: 8pt;'>programming</a>
+<a href='http://abitgames.com/old-blog/tag/promotion/' class='tag-link-37' title='1 topic' style='font-size: 8pt;'>promotion</a>
+<a href='http://abitgames.com/old-blog/tag/release/' class='tag-link-21' title='5 topics' style='font-size: 15pt;'>release</a>
+<a href='http://abitgames.com/old-blog/tag/screenshot/' class='tag-link-25' title='3 topics' style='font-size: 12.375pt;'>screenshot</a>
+<a href='http://abitgames.com/old-blog/tag/spawn/' class='tag-link-17' title='1 topic' style='font-size: 8pt;'>spawn</a>
+<a href='http://abitgames.com/old-blog/tag/story/' class='tag-link-19' title='4 topics' style='font-size: 13.833333333333pt;'>story</a>
+<a href='http://abitgames.com/old-blog/tag/supersheeptap/' class='tag-link-35' title='5 topics' style='font-size: 15pt;'>SuperSheepTap</a>
+<a href='http://abitgames.com/old-blog/tag/test/' class='tag-link-3' title='2 topics' style='font-size: 10.625pt;'>test</a>
+<a href='http://abitgames.com/old-blog/tag/trailer/' class='tag-link-54' title='1 topic' style='font-size: 8pt;'>trailer</a>
+<a href='http://abitgames.com/old-blog/tag/tutorial/' class='tag-link-43' title='5 topics' style='font-size: 15pt;'>tutorial</a>
+<a href='http://abitgames.com/old-blog/tag/unity3d/' class='tag-link-30' title='17 topics' style='font-size: 22pt;'>unity3d</a>
+<a href='http://abitgames.com/old-blog/tag/video/' class='tag-link-32' title='8 topics' style='font-size: 17.479166666667pt;'>video</a>
+<a href='http://abitgames.com/old-blog/tag/wallpaper/' class='tag-link-22' title='2 topics' style='font-size: 10.625pt;'>wallpaper</a></div>
+</li>
+<li id="archives-3" class="widget widget_archive"><span class="widget-title">Archives</span>
+		<ul>
+			<li><a href='http://abitgames.com/old-blog/2012/08/' title='August 2012'>August 2012</a></li>
+	<li><a href='http://abitgames.com/old-blog/2012/05/' title='May 2012'>May 2012</a></li>
+	<li><a href='http://abitgames.com/old-blog/2012/04/' title='April 2012'>April 2012</a></li>
+	<li><a href='http://abitgames.com/old-blog/2012/03/' title='March 2012'>March 2012</a></li>
+	<li><a href='http://abitgames.com/old-blog/2012/02/' title='February 2012'>February 2012</a></li>
+	<li><a href='http://abitgames.com/old-blog/2012/01/' title='January 2012'>January 2012</a></li>
+	<li><a href='http://abitgames.com/old-blog/2011/11/' title='November 2011'>November 2011</a></li>
+	<li><a href='http://abitgames.com/old-blog/2011/10/' title='October 2011'>October 2011</a></li>
+	<li><a href='http://abitgames.com/old-blog/2011/09/' title='September 2011'>September 2011</a></li>
+	<li><a href='http://abitgames.com/old-blog/2011/08/' title='August 2011'>August 2011</a></li>
+	<li><a href='http://abitgames.com/old-blog/2011/07/' title='July 2011'>July 2011</a></li>
+	<li><a href='http://abitgames.com/old-blog/2011/06/' title='June 2011'>June 2011</a></li>
+	<li><a href='http://abitgames.com/old-blog/2011/05/' title='May 2011'>May 2011</a></li>
+	<li><a href='http://abitgames.com/old-blog/2011/03/' title='March 2011'>March 2011</a></li>
+	<li><a href='http://abitgames.com/old-blog/2011/02/' title='February 2011'>February 2011</a></li>
+	<li><a href='http://abitgames.com/old-blog/2010/12/' title='December 2010'>December 2010</a></li>
+		</ul>
+</li>
+<li id="linkcat-44" class="widget widget_links"><span class="widget-title">Indie Game Commnuity</span>
+
+	<ul class='xoxo blogroll'>
+<li><a href="http://fenglee.com/" rel="friend" title="Flash game developer, creator of &#8220;Arcuz&#8221;" target="_blank" onclick="javascript:_gaq.push(['_trackEvent','outbound-blogroll','http://fenglee.com/']);">Feng‘s Game</a></li>
+<li><a href="http://www.inpla.net" rel="friend" title="Indie game news and showcases!" target="_blank" onclick="javascript:_gaq.push(['_trackEvent','outbound-blogroll','http://www.inpla.net']);">IN星球 &#8211; 独立游戏网站</a></li>
+<li><a href="http://ggpdf.com/" rel="friend" title="精品独立游戏的pdf格式攻略汇总" target="_blank" onclick="javascript:_gaq.push(['_trackEvent','outbound-blogroll','http://ggpdf.com/']);">玩乐手帐</a></li>
+
+	</ul>
+</li>
+
+	</ul>
+</div><!-- .leaf-content -->
+</div><!-- .headway-leaf-inside -->
+</div><!-- #leaf-33 -->
+
+</div><!-- #container -->
+<div id="footer">
+<p class="footer-left" id="footer-headway-link">Powered by Headway, the  <a href="http://www.headwaythemes.com/" title="Headway Premium WordPress Theme">drag and drop WordPress theme</a></p><a href="#top" class="footer-right" id="footer-go-to-top-link">Go To Top</a><a href="http://abitgames.com/old-blog/ex/wp-admin" class="footer-right" id="footer-admin-link">Administration Login</a><p class="copyright" id="footer-copyright">Copyright &copy; 2014 aBit Games</p>
+</div><!-- #footer --><div class="clear"></div><!-- Clear in case footer is missing. -->
+</div><!-- #wrapper -->
+</div><!-- #whitewrap -->
+<script type="text/javascript">
+
+var addthis_config = {"data_track_clickback":true,"data_track_addressbar":false,"data_track_textcopy":false};
+var addthis_product = 'wpp-265';
+</script><script type="text/javascript" src="//s7.addthis.com/js/250/addthis_widget.js#pubid=nantas"></script><script type="text/javascript"></script><!--wp_footer--></body>
+</html>
